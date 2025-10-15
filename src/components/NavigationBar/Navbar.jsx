@@ -68,14 +68,14 @@ export default function Navbar() {
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="md:hidden bg-[#0d1825] text-white shadow-lg transition-all duration-300">
-                        <ul className="flex flex-col items-center space-y-6 py-6 font-medium">
+                        <ul className="flex flex-col items-start px-4 space-y-6 py-6 font-medium">
                             {navLinks.map((item, id) => (
                                 <li key={id}>
-                                    <div className='hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] flex flex-row items-center gap-2'>
+                                    <div className='hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] flex flex-row items-start gap-2'>
                                         {item.icon}
                                         <Link
                                             to={item.href}
-                                            className="hover:text-blue-400 transition-colors hover:underline underline-offset-8 decoration-2"
+                                            className="hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5]transition-colors hover:underline underline-offset-8 decoration-2"
                                             onClick={() => {
                                                 setIsOpen(false);
                                                 scrollToTop();
