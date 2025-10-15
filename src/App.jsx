@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from './components/NavigationBar/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
     return (
         <>
-            <h1 className='text-red-500'>Hello</h1>
+            <BrowserRouter>
+                <Navbar />
+
+                
+            </BrowserRouter>
         </>
     )
 }

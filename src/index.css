@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+/* Logo Text animation for Navbar logo */
+.logo-text {
+    font: 700 2rem 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff4d4d, #ff9f1a, #ffcd1a, #4dff4d, #1a9fff, #9f1aff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
