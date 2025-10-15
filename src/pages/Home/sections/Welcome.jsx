@@ -19,7 +19,7 @@ export default function Welcome() {
                         <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer">
                             Get Started
                         </button>
-                        <button className="mt-6 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer">
+                        <button className="mt-6 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer">
                             Add New Record
                         </button>
                     </div>
