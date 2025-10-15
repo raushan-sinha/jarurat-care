@@ -16,10 +16,10 @@ export default function Welcome() {
                         Your trusted digital solution for managing and accessing patient health records securely and efficiently.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center gap-0 sm:gap-4">
-                        <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer">
+                        <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer font-semibold">
                             Get Started
                         </button>
-                        <button className="mt-6 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer">
+                        <button className="mt-6 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer font-semibold">
                             Add New Record
                         </button>
                     </div>
