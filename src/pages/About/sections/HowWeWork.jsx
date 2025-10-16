@@ -4,7 +4,7 @@ export default function HowWeWork() {
     const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgfVGbvI8oR57TKTtBY_U-v6N8BmEU9LKKg&s';
 
     return (
-        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[#101923]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="text-gray-300 text-justify">
                 <h2 className="text-2xl font-semibold text-white mb-4">How We Work</h2>
                 <p>

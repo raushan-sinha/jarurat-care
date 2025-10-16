@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Mission() {
     return (
-        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 text-gray-300 text-justify bg-[#101923]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 text-gray-300 text-justify">
             <h2 className="text-2xl font-semibold text-white mb-4">Our Mission</h2>
             <p>
                 Our mission is to bring transparency and simplicity to healthcare data

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FutureGoals() {
     return (
-        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 text-gray-300 text-justify pb-20 bg-[#101923]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 text-gray-300 text-justify pb-20">
             <h2 className="text-2xl font-semibold text-white mb-4">Future Goals</h2>
             <p>
                 As we continue to evolve, our focus remains on integrating emerging

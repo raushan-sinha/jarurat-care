@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutHeader() {
     return (
-        <div className="py-16 px-6 sm:px-10 lg:px-20 text-center max-w-6xl mx-auto bg-[#101923]">
+        <div className="py-16 px-6 sm:px-10 lg:px-20 text-center max-w-6xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
                 About <span className="text-blue-500">Jarurat Care</span>
             </h1>

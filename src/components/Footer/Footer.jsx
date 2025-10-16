@@ -33,7 +33,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="bg-[#101923] text-gray-200 py-10 mt-10 text-center">
+            <footer className="bg-[#101923] text-gray-200 py-10 text-center">
                 <div className="max-w-5xl mx-auto px-6 flex flex-col items-center justify-center space-y-10">
 
                     {/* Footer Grid */}
