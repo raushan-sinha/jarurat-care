@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { patientsData } from './patientRecordsData';
 import PatientCard from '../../components/PatientCard/PatientCard';
+import PatientsInfoPopup from '../../components/PatientsInfoPopup/PatientsInfoPopup';
 
 export default function PatientsRecords() {
     const [searchData, setSearchData] = useState('')
+    const [showPopup, setShowPopup] = useState(false)
 
     //todo: Filter out Patients Data - 
     const filteredPatients = patientsData.filter((patient) => (
@@ -30,9 +32,11 @@ export default function PatientsRecords() {
                             onChange={(e) => setSearchData(e.target.value)}
                             className="px-4 py-2 w-full sm:w-72 rounded-lg border-2 font-semibold border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400"
                         />
-                        <button className="bg-green-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer whitespace-nowrap">
+                        <button className="bg-green-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer whitespace-nowrap" onClick={() => setShowPopup(true)}>
                             + Add New Patient
                         </button>
+
+                        {showPopup && <PatientsInfoPopup onClose={() => setShowPopup(false)} />}
                     </div>
                 </div>
 
@@ -42,7 +46,7 @@ export default function PatientsRecords() {
                         <PatientCard key={patient.id} patient={patient} />
                     ))}
                     {filteredPatients.length === 0 && (
-                            <p className="col-span-full text-gray-800 text-2xl text-center">No Patients found.</p>
+                        <p className="col-span-full text-gray-800 text-2xl text-center">No Patients found.</p>
                     )}
                 </div>
             </div>
