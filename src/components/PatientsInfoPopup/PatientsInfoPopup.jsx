@@ -23,7 +23,7 @@ const PatientsInfoPopup = ({ onClose }) => {
                 {/* Close Icon */}
                 <button
                     onClick={onClose}
-                    className="absolute top-3 right-3 text-gray-500 hover:text-red-500 transition"
+                    className="absolute top-3 right-3 cursor-pointer text-gray-500 hover:text-red-500 transition"
                 >
                     <Close size={24} />
                 </button>
@@ -89,7 +89,7 @@ const PatientsInfoPopup = ({ onClose }) => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition"
+                        className="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition cursor-pointer"
                     >
                         Submit
                     </button>
