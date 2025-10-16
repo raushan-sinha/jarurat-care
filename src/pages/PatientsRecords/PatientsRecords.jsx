@@ -15,7 +15,9 @@ export default function PatientsRecords() {
             <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 py-12 px-6 mt-10">
                 {/* Header */}
                 <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center mb-10 gap-4">
-                    <h1 className="text-4xl font-bold text-blue-800 underline underline-offset-4">Patients Records</h1>
+                    <h1 className="text-4xl font-bold text-sky-700 whitespace-nowrap">
+                        Patients Records
+                    </h1>
 
                     <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
                         <input
@@ -28,7 +30,7 @@ export default function PatientsRecords() {
                             onChange={(e) => setSearchData(e.target.value)}
                             className="px-4 py-2 w-full sm:w-72 rounded-lg border-2 font-semibold border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400"
                         />
-                        <button className="bg-green-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer">
+                        <button className="bg-green-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer whitespace-nowrap">
                             + Add New Patient
                         </button>
                     </div>

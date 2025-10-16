@@ -4,10 +4,16 @@ import ClearIcon from '@mui/icons-material/Clear';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import PersonalInjuryIcon from '@mui/icons-material/PersonalInjury';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate('/');
+        scrollToTop();
+    }
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -32,7 +38,8 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
                     {/* Logo */}
                     <div
-                        className="text-2xl sm:text-3xl font-bold text-white tracking-wide cursor-pointer logo-text"
+                        className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wide cursor-pointer logo-text"
+                        onClick={handleNavigate}
                     >
                         {logoName}
                     </div>

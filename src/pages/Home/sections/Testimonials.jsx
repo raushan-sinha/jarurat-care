@@ -9,7 +9,7 @@ export default function Testimonials() {
 
     return (
         <section className="py-16 bg-blue-100 text-center">
-            <h2 className="text-3xl font-semibold text-blue-700 mb-10">What Our Users Say</h2>
+            <h2 className="text-3xl sm:text-5xl font-semibold text-blue-700 mb-10">What Our Users Say</h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
                 {reviews.map((r, i) => (
                     <div key={i} className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
