@@ -1,13 +1,14 @@
-import React from "react";
+import HowWeWorkImage from "../../../assets/About/HowWeWork.png";
 
 export default function HowWeWork() {
-    const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgfVGbvI8oR57TKTtBY_U-v6N8BmEU9LKKg&s';
-
     return (
-        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="text-gray-300 text-justify">
-                <h2 className="text-2xl font-semibold text-white mb-4">How We Work</h2>
-                <p>
+        <section className="max-w-6xl mx-auto flex flex-col xl:flex-row gap-10 items-center p-5 lg:py-15 text-center">
+            <div className="w-full xl:w-1/2">
+                <h1 className="text-3xl md:text-5xl font-bold text-cyan-800 mb-6">
+                    How We Work
+                </h1>
+
+                <p className="text-md md:text-xl">
                     Our system uses modern web technologies like React, Node.js, and
                     secure database solutions to maintain a high level of reliability.
                     Each patient’s record is assigned a unique digital identity, allowing
@@ -17,13 +18,7 @@ export default function HowWeWork() {
                 </p>
             </div>
 
-            <div className="flex justify-center">
-                <img
-                    src={imageUrl}
-                    alt="Jarurat Care About"
-                    className="rounded-2xl shadow-lg w-full max-w-md sm:max-w-lg object-cover"
-                />
-            </div>
-        </div>
+            <img src={HowWeWorkImage} alt="Jarurat Care About" className="rounded-2xl shadow-lg w-full max-w-md sm:max-w-lg object-cover" />
+        </section>
     );
 }

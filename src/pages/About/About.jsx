@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutHeader from './sections/AboutHeader';
 import Mission from './sections/Mission';
 import WhyChoose from './sections/WhyChoose';
@@ -10,7 +9,7 @@ import FutureGoals from './sections/FutureGoals';
 export default function About() {
     return (
         <>
-            <div className='mt-10'>
+            <div className='mt-15 bg-cyan-50'>
                 <AboutHeader />
                 <Mission />
                 <WhyChoose />
