@@ -11,7 +11,7 @@ export default function Features() {
 
     return (
         <section className="py-16 bg-gradient-to-r from-[#f1eaff] to-[#ffeded]">
-            <h2 className="text-3xl sm:text-5xl font-semibold text-center text-blue-700 mb-10">Our Key Features</h2>
+            <h2 className="text-3xl sm:text-5xl font-bold text-center text-blue-700 mb-10">Our Key Features</h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
                 {features.map((item, idx) => (
                     <div key={idx} className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition">

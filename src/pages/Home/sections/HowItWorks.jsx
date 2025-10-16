@@ -10,7 +10,7 @@ export default function HowItWorks() {
 
     return (
         <section className="py-16 bg-blue-50">
-            <h2 className="text-3xl sm:text-5xl font-semibold text-center text-blue-700 mb-10">How It Works</h2>
+            <h2 className="text-3xl sm:text-5xl font-bold text-center text-blue-700 mb-10">How It Works</h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
                 {steps.map((item, idx) => (
                     <div key={idx} className="bg-white p-6 rounded-xl shadow hover:shadow-md transition text-center">

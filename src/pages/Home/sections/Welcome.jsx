@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { use } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Welcome() {
+    //todo: Image URL -
     const imageUrl = 'https://media.gettyimages.com/id/187137135/photo/doctors-using-digital-tablet-together-in-hospital.jpg?s=612x612&w=0&k=20&c=5e81mhbaAbmx8GM1fiFGcrskiDR5Cv6p7xwjjE5z6Mk='
+
+    //todo: Navigate -
+    const navigate = useNavigate();
+    const handleGetStarted = () => {
+        navigate('/patients');
+        scrollToTop();
+    }
 
     return (
         <section className="bg-[#101923] py-16 mt-10">
@@ -16,11 +25,8 @@ export default function Welcome() {
                         Your trusted digital solution for managing and accessing patient health records securely and efficiently.
                     </p>
                     <div className="flex flex-wrap justify-center md:justify-start items-center gap-3">
-                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer font-semibold">
+                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer font-semibold" onClick={handleGetStarted}>
                             Get Started
-                        </button>
-                        <button className="mt-4 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition cursor-pointer font-semibold">
-                            Add New Record
                         </button>
                     </div>
                 </div>

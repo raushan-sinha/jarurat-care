@@ -38,7 +38,7 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
                     {/* Logo */}
                     <div
-                        className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wide cursor-pointer logo-text"
+                        className="text-base sm:text-2xl md:text-3xl font-bold text-white tracking-wide cursor-pointer logo-text"
                         onClick={handleNavigate}
                     >
                         {logoName}
