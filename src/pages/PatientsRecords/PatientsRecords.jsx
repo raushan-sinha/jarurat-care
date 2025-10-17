@@ -70,7 +70,9 @@ export default function PatientsRecords() {
             {loading ? (
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2, mt: 10 }}>
                     <CircularProgress />
-                    <p className="text-gray-700 text-2xl">Loading Patients Details...</p>
+                    <p className="text-gray-700 text-xl lg:text-4xl whitespace-nowrap">
+                        Loading Patients Details...
+                    </p>
                 </Box>
             ) : (
                 /* Patient Cards Grid */
