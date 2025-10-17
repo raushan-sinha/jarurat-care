@@ -57,11 +57,12 @@ The **Home Page** provides an engaging introduction to Jarurat Care with multipl
 
 The **Patients Page** is the core functionality of the application, featuring:
 
-- ⏳ **Loading Spinner:** Displays while fetching patient data.  
-- 🔎 **Search Filter:** Users can search patient records by name.  
-- 🧍‍♂️ **Patient Cards:** 10 preloaded patient records displayed using a **responsive grid layout**.  
-- ➕ **Add New Patient:** Opens a popup form to input new patient details.  
-- 📱 **Fully Responsive:** Adjusts layout dynamically for all screen sizes.  
+- ⏳ **Loading Spinner:** Displays while fetching patient data to improve user experience.
+- 🔎 **Search Filter:** Users can search patient records by name using an intuitive search box.
+- 🧍‍♂️ **Patient Cards:** 10 preloaded patient records displayed in a **responsive grid layout** suitable for desktop, tablet, and mobile screens.
+- ➕ **Add New Patient:** Opens a popup form to input new patient details seamlessly.
+- 👁️ **View Details:** Each patient card has a **View Details** button; clicking it shows detailed information about the selected patient in a popup.
+- 📱 **Fully Responsive:** Adjusts layout dynamically for all screen sizes, ensuring accessibility on any device. 
 
 This section integrates **mock JSON data** to simulate real-world data fetching and management.
 
