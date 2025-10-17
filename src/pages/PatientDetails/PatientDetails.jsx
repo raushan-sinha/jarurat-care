@@ -40,7 +40,7 @@ export default function PatientDetails() {
         <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 py-12 px-6">
             <div className="bg-white shadow-lg rounded-2xl p-10 max-w-2xl w-full">
                 <h1 className="text-3xl font-bold text-sky-700 mb-6 text-center">
-                    {patient.name}'s Details
+                    Patient's Detail
                 </h1>
 
                 <div className="space-y-4 text-gray-700">
