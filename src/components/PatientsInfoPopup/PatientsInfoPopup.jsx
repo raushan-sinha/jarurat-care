@@ -17,7 +17,7 @@ const PatientsInfoPopup = ({ onClose }) => {
     }
 
     return (
-        <div className="fixed inset-0 flex justify-center items-center bg-black/40 backdrop-blur-sm z-50 px-4">
+        <div className="fixed inset-0 flex justify-center items-center bg-black/40 backdrop-blur-sm z-50">
             {/* Popup Box */}
             <div className="bg-white rounded-2xl shadow-lg w-full max-w-md p-6 relative">
                 {/* Close Icon */}
