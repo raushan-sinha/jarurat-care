@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from './components/NavigationBar/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
-import Footer from './components/Footer/Footer'
 import About from './pages/About/About'
 import PatientsRecords from './pages/PatientsRecords/PatientsRecords'
 import PatientDetails from './pages/PatientDetails/PatientDetails'
+import Footer from './components/layout/Footer'
+import Navbar from './components/layout/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
                 </Routes>
 
                 <Footer />
+                
+                <ScrollToTop />
             </BrowserRouter>
         </>
     )
