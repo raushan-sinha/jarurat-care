@@ -1,10 +1,7 @@
-import React, { use } from 'react';
 import { useNavigate } from 'react-router-dom';
+import HomePageImage from '../../../assets/homepage-logo.jpg'
 
 export default function Welcome() {
-    //todo: Image URL -
-    const imageUrl = 'https://media.gettyimages.com/id/187137135/photo/doctors-using-digital-tablet-together-in-hospital.jpg?s=612x612&w=0&k=20&c=5e81mhbaAbmx8GM1fiFGcrskiDR5Cv6p7xwjjE5z6Mk='
-
     //todo: Navigate -
     const navigate = useNavigate();
     const handleGetStarted = () => {
@@ -13,9 +10,8 @@ export default function Welcome() {
     }
 
     return (
-        <section className="bg-[#101923] py-16 mt-10">
+        <section className="bg-[#101923] py-16">
             <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-
                 {/* Left Side - Text Content */}
                 <div className="text-center md:text-left flex-1">
                     <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4">
@@ -34,9 +30,9 @@ export default function Welcome() {
                 {/* Right Side - Image */}
                 <div className="flex-1 flex justify-center">
                     <img
-                        src={imageUrl}
+                        src={HomePageImage}
                         alt="Jarurat Care Illustration"
-                        className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain rounded-2xl shadow-lg"
+                        className="w-[90%] md:w-[70%] lg:w-[60%] h-auto max-w-lg object-cover rounded-2xl shadow-2xl mt-6"
                     />
                 </div>
             </div>
