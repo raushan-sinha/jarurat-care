@@ -10,7 +10,7 @@ export default function Welcome() {
     }
 
     return (
-        <section className="bg-[#101923] py-16">
+        <section className="bg-[#101923] py-20">
             <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
                 {/* Left Side - Text Content */}
                 <div className="text-center md:text-left flex-1">
