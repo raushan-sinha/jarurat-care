@@ -4,10 +4,11 @@ import ClearIcon from '@mui/icons-material/Clear';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import PersonalInjuryIcon from '@mui/icons-material/PersonalInjury';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
     const navigate = useNavigate();
     const handleNavigate = () => {
@@ -48,12 +49,11 @@ export default function Navbar() {
                     <ul className="hidden md:flex text-white font-medium text-base lg:text-lg items-center gap-4 lg:gap-10">
                         {navLinks.map((item, id) => (
                             <li key={id}>
-                                <div className='hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] flex flex-row items-center gap-2'>
+                                <div className={`${location.pathname === item.href ? 'text-red-500' : ''} hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] flex flex-row items-center gap-2`}>
                                     {item.icon}
                                     <Link
                                         to={item.href}
-                                        className="hover:underline underline-offset-8 decoration-2 hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] transition-all"
-                                    >
+                                        className={`hover:underline underline-offset-8 decoration-2 hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] transition-all`}>
                                         {item.name}
                                     </Link>
                                 </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
                         <ul className="flex flex-col items-start px-4 space-y-6 py-6 font-medium">
                             {navLinks.map((item, id) => (
                                 <li key={id}>
-                                    <div className='hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] flex flex-row items-start gap-2'>
+                                    <div className={`${location.pathname === item.href ? 'text-red-500' : ''} hover:text-red-300 hover:drop-shadow-[0_0_15px_#fca5a5] flex flex-row items-start gap-2`}>
                                         {item.icon}
                                         <Link
                                             to={item.href}
@@ -86,8 +86,7 @@ export default function Navbar() {
                                             onClick={() => {
                                                 setIsOpen(false);
                                                 scrollToTop();
-                                            }}
-                                        >
+                                            }}>
                                             {item.name}
                                         </Link>
                                     </div>
@@ -96,7 +95,7 @@ export default function Navbar() {
                         </ul>
                     </div>
                 )}
-            </nav>
+            </nav >
         </>
     );
 }
